@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>胡桃木架子_澳凡家具|上海澳凡家具</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/templets/default/style/picture.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	var taget_obj = document.getElementById('_ajax_feedback');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/member/ajax_feedback.php");
+	DedeXHTTP = null;
+}
+function checkSubmit(){
+	if(document.feedback.msg.value!='') document.feedback.submit();
+	else alert("评论内容不能为空！");
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+	DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+
+
+  var shortname = ".html";
+  var npage = 1;
+	var totalpage = 1;
+	var namehand = '175';
+	var displaytype = 'st';
+	var gtimer = null;
+	//大图
+	function dPlayBig()
+	{
+		var imgObj = document.getElementById("bigimg");
+		window.open(imgObj.src);
+	}
+	//停止幻灯
+	function dStopPlay()
+	{
+		if(gtimer) clearTimeout(gtimer);
+		else dPlayNext();
+	}
+	//开始幻灯
+	function dStartPlay()
+	{
+		if(npage!=totalpage) {
+			gtimer = setTimeout("dPlayNext()",10000);
+		}
+	}
+
+	//上一张
+	function dPlayPre(){
+
+	if(npage<2)
+	{
+			alert("这是第一页");
+	}
+	else
+	{
+			if(npage==2) {
+				if(namehand!='') location.href = namehand+shortname;
+				else location.href = "view.php?aid=175";
+			} else if(displaytype=='st' && namehand!='') {
+				location.href = namehand+"_"+(npage-1)+shortname;
+			} else {
+				location.href = "view.php?aid=175&pageno="+(npage-1);
+			}
+		}
+	}
+
+	//下一张
+	function dPlayNext()
+	{
+		if(npage==totalpage) { alert("没有了哦"); }
+		else
+		{
+			if(displaytype=='st' && namehand!='') location.href = namehand+"_"+(npage+1)+shortname;
+			else location.href = "view.php?aid=175&pageno="+(npage+1);
+		}
+	}
+-->
+</script>
+</head>
+<body class="picboxview">
+
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+     <div class="toplinks"><a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/data/sitemap.html" target="_blank">网站地图</a>|<a href="/tags.php">TAG标签</a><a href="/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://shaofanjiajucom751.hk815.pc51.com');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://shaofanjiajucom751.hk815.pc51.com','澳凡家具|上海澳凡家具')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://shaofanjiajucom751.hk815.pc51.com"><img src="/templets/default/images/logo.gif" height="54" width="216" alt="澳凡家具|上海澳凡家具"/></a> </h1>
+      </div>
+      <div class="banner"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script></div>
+      <div class="banner2"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script></div>
+       
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/webbase/'  rel='dropmenu1'><span>新闻中心</span></a></li>
+      	
+      	<li><a href='/a/guanyuaofan/'  rel='dropmenu12'><span>关于澳凡</span></a></li>
+      	<li class='hover'><a href='/a/pics/' ><span>澳凡产品</span></a></li>
+      	<li><a href='/a/jiamengaofan/' ><span>加盟澳凡</span></a></li>
+      	
+      	<li><a href='/a/fuwuzhongxin/'  rel='dropmenu23'><span>服务中心</span></a></li>
+      	
+      	<li><a href='/a/pics/xilieyi/' ><span>营销网络</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/dedecms5.1/'>dedecms5.1</a></li>
+          
+            <li><a href='/tags.php?/sp1/'>sp1</a></li>
+          
+            <li><a href='/tags.php?/%E5%85%8D%E8%B4%B9%E7%89%88/'>免费版</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="place">
+			<strong>当前位置:</strong> <a href='http://shaofanjiajucom751.hk815.pc51.com/'>主页</a> > <a href='/a/pics/'>澳凡产品</a> > 
+		</div><!-- /place -->
+		<div class="viewbox">
+			<div class="title">
+				<h2>胡桃木架子</h2>
+			</div><!-- /title -->
+			<div class="info">
+				<small>时间:</small>2014-10-30 15:43<small>来源:</small>未知 <small>作者:</small>admin <small>点击:</small><script src="/plus/count.php?view=yes&aid=175&mid=1" type='text/javascript' language="javascript"></script>次
+			</div><!-- /info -->
+			<div class="picbox">
+
+             
+					<center>
+						<a href='javascript:dPlayBig();' class='c1'>原始图片</a>
+
+						<a href='javascript:dPlayPre();' class='c1'>上一张</a>
+
+						<a href='javascript:dPlayNext();' class='c1'>下一张</a>
+
+						<a href='javascript:dStopPlay();' class='c1'>自动 / 暂停播放</a>
+
+					</center>
+                	
+             <!-- 如果使用的是多页单图模式(幻灯)，把href里的链接改为 javascript:dPlayNext(); 表示点击看下一页 -->
+             
+
+             <script language='javascript'>dStartPlay();</script>
+
+			</div>
+           	<div class="intro"><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top; display:block"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+            <div style="clear:both"></div>
+            </div>
+			<div class="newdigg" id="newdigg">
+				<div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',175)">
+					<div class="digg_act">顶一下</div>
+					<div class="digg_num">(0)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:0%"></span></div>
+						<div class="digg_percent_num">0%</div>
+					</div>
+				</div>
+				<div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',175)">
+					<div class="digg_act">踩一下</div>
+					<div class="digg_num">(0)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:0%"></span></div>
+						<div class="digg_percent_num">0%</div>
+					</div>
+				</div>
+			</div>
+			 <script language="javascript" type="text/javascript">getDigg(175);</script>
+
+			<div class="boxoff">
+				<strong>------分隔线----------------------------</strong>
+			</div>
+			<div class="handle">
+				<div class="context">
+					<ul>
+						<li>上一篇：<a href='/a/pics/2014/1030/174.html'>胡桃木书柜</a> </li>
+						<li>下一篇：<a href='/a/pics/2014/1030/176.html'>胡桃木梳妆柜</a> </li>
+					</ul>
+				</div><!-- /context -->
+				<div class="actbox">
+					<ul>
+						<li id="act-fav"><a href="/plus/stow.php?aid=175" target="_blank">收藏</a></li>
+						<li id="act-err"><a href="/plus/erraddsave.php?aid=175&title=胡桃木架子" target="_blank">挑错</a></li>
+						<li id="act-pus"><a href="/plus/recommend.php?aid=175" target="_blank">推荐</a></li>
+						<li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+					</ul>
+				</div><!-- /actbox -->
+			</div><!-- /handle -->
+		</div><!-- /viewbox -->
+
+<!-- //AJAX评论区 -->
+<div class='_DEDECY' style=''><div id='SOHUCS' sid='175'></div></div><script>(function(){var doc = document,s = doc.createElement('script'),h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;s.type = 'text/javascript';s.charset = 'utf-8';s.src='http://assets.changyan.sohu.com/upload/changyan.js?conf=prod_aa7a7d3a2a7d1c93a035f49692c4f887&appid=cyrqwcpnI';h.insertBefore(s,h.firstChild);window.SCS_NO_IFRAME = true;})()</script>
+
+
+	</div><!-- /pleft -->
+
+	<div class="pright">
+	    <div class="infos_userinfo">
+ 			
+   	 	</div>
+
+    	<div class="mt1">
+			<dl class="tbox">
+				<dt><strong>热点图集</strong></dt>
+				<dd>
+					<ul class="e3">
+                    <li>
+							<a href="/a/pics/2014/1030/157.html" class="preview"><img src="/uploads/allimg/141030/1-1410301226440-L.jpg" alt="胡桃木边角柜"/></a>
+							<a href="/a/pics/2014/1030/157.html" class="title">胡桃木边角柜</a>
+							<span class="intro">更新:2014-10-30</span>
+						</li>
+<li>
+							<a href="/a/pics/2014/1030/199.html" class="preview"><img src="/uploads/allimg/141030/1-1410301552130-L.jpg" alt="胡桃木家具组合"/></a>
+							<a href="/a/pics/2014/1030/199.html" class="title">胡桃木家具组合</a>
+							<span class="intro">更新:2014-10-30</span>
+						</li>
+<li>
+							<a href="/a/pics/2014/1030/153.html" class="preview"><img src="/uploads/allimg/141030/1-1410301225340-L.jpg" alt="胡桃木边角柜"/></a>
+							<a href="/a/pics/2014/1030/153.html" class="title">胡桃木边角柜</a>
+							<span class="intro">更新:2014-10-30</span>
+						</li>
+<li>
+							<a href="/a/pics/2014/1030/186.html" class="preview"><img src="/uploads/allimg/141030/1-141030154K80-L.jpg" alt="胡桃木衣柜"/></a>
+							<a href="/a/pics/2014/1030/186.html" class="title">胡桃木衣柜</a>
+							<span class="intro">更新:2014-10-30</span>
+						</li>
+<li>
+							<a href="/a/pics/2014/1030/188.html" class="preview"><img src="/uploads/allimg/141030/1-141030154R60-L.jpg" alt="胡桃木镜子"/></a>
+							<a href="/a/pics/2014/1030/188.html" class="title">胡桃木镜子</a>
+							<span class="intro">更新:2014-10-30</span>
+						</li>
+
+
+					</ul>
+				</dd>
+			</dl>
+		</div>
+        <div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+		<div class="mt1">
+			<dl class="tbox">
+				<dt><strong>推荐图集</strong></dt>
+				<dd>
+					<ul class="e9">
+                    
+					</ul>
+				</dd>
+			</dl>
+		</div>
+      <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+
+	</div><!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+
+<!-- //底部模板 -->
+
+										<span style="color: #4d4d4d;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Copyright © shaofanjiu.com All Rights Reserved</span>. 上海市澳凡家具有限公司 <a href="http://www.miibeian.gov.cn/">粤ICP备080253599号</a>&nbsp; 技术支持<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=157959324&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:157959324:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></span></span>
+										
+										
+
+									
+<!-- /footer -->
+
+</body>
+</html>

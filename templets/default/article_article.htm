@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.mujiang.com/news_detail/newsId=19.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+		<meta name="keywords" content="{dede:field.keywords/}">
+		<meta name="description" content="{dede:field.description function='html2text(@me)'/}">
+		<link href="{dede:global.cfg_cmsurl/}/images/article_article_files/lib.min.css" rel="stylesheet" type="text/css">
+		<link href="{dede:global.cfg_cmsurl/}/images/article_article_files/page_news_detail.min.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="{dede:global.cfg_cmsurl/}/images/article_article_files/jquery.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_cmsurl/}/images/article_article_files/lib.min.js"></script>
+		<script src="{dede:global.cfg_cmsurl/}/images/article_article_files/saved_resource.js"></script>
+		
+
+	</head>	
+{dede:include filename="head.htm"/}
+					<div id="box_main_nei_zs">
+						<div id="box_main_nei_zs_sub1">
+							<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1384162233600" name="说明页">
+								<div id="FrontSpecifies_show01-1384162233600" class="FrontSpecifies_show01-d3_c1">
+									<div class="describe htmledit">
+										<img src="{dede:global.cfg_cmsurl/}/images/article_article_files/banner_about_041.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="box_main_nei_zs_sub2"></div>
+						<div id="box_main_nei_zs_sub3">
+							<div id="box_main_nei_zs_sub3_sub1">
+								<div id="box_main_nei_zs_sub3_sub1_sub1">
+									<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383906152245" name="说明页">
+										<div id="FrontSpecifies_show01-1383906152245" class="FrontSpecifies_show01-d3_c1">
+											<div class="describe htmledit">
+												<p style="border-bottom: #006867 1px dashed; width: 660px;">
+													<span style="line-height: 40px; font-family: 微软雅黑; color: #2a2a2a; font-size: 12pt; margin_bottom: 20px;">MUJIANG&nbsp;.新闻详细</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="box_main_nei_zs_sub3_sub1_sub2">
+									<div xmlns="" class="columnSpace" id="elem-FrontNews_detail01-1383906138941" name="资讯详细信息">
+										<script type="text/javascript">
+											// <![CDATA[
+											FrontNews_detail01['FrontNews_detail01-1383906138941_init'] = function() {
+												//设置附件的下载地址!
+												//读取留言数量
+											}
+											jQuery(FrontNews_detail01['FrontNews_detail01-1383906138941_init']);
+											// ]]>
+											function convert(compId, item) {
+												var detailform = document.getElementById(compId + "_" + "form");
+												var newsKeyword_show = detailform.newsKeyword.value;
+												if (newsKeyword_show != "") {
+													var keyV = document.getElementById(item).innerText;
+													if (!keyV) {
+														keyV = document.getElementById(item).innerHTML;
+													}
+													var after = encodeURIComponent(keyV);
+													detailform.newsKeyword.value = after;
+												}
+												detailform.action = "/FrontNews.do?method=submit";
+												detailform.submit();
+											}
+
+											function convertStr(item) {
+												return item.replace(/\&lt;/g, "<").replace(/\&gt;/g, ">");
+											}
+
+											function gotohtml() {
+												if (window.i18n_FrontNews_detail01_news_page_haveNoRight) {
+													alert(i18n_FrontNews_detail01_news_page_haveNoRight);
+												}
+												var pageNO = history.length;
+												if (document.all) {
+													//IE代码
+													if (pageNO == 0) {
+														window.close();
+													} else {
+														history.go(-1);
+													}
+												} else {
+													//其他
+													if (pageNO == 1) {
+														window.close();
+													} else {
+														history.go(-1);
+													}
+												}
+											}
+										</script>
+										<form id="FrontNews_detail01-1383906138941_form" method="post">
+											<input type="hidden" name="action_page" value="/news_list.html">
+											<input type="hidden" name="newsScope" value="3">
+											<input type="hidden" name="newsSearch" value="newsSearch">
+											<input type="hidden" name="newsKeyword" value="">
+											<div id="FrontNews_detail01-1383906138941" class="FrontNews_detail01-d1_c1">
+												<div id="newsdetailshow" style="">
+													<h2>{dede:field.title/}</h2>
+													<div class="message">
+														<span class="date"><em>日期：</em>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/} </span>
+													</div>
+													<div class="summary"></div>
+													<div class="describe htmledit" id="infoContent">
+
+														{dede:field.body/}
+														{dede:field.vote/}
+														(责任编辑：{dede:adminname/})
+													</div>
+													<p></p>
+													<div class="operate"></div>
+													<div class="other">
+														<p class="typename">
+															<strong>所属类别：</strong>
+															{dede:field.source/}
+														</p>
+														<p class="keyword">
+															该资讯的关键词为：{dede:field.keywords/}
+														</p>
+														<ul>
+															<li>
+																{dede:prenext get='pre'/}
+															</li>
+															<li>
+																{dede:prenext get='next'/}
+															</li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+
+										</form>
+										<script type="text/javascript">
+											jQuery("#newsdetailshow").show();
+										</script>
+									</div>
+								</div>
+							</div>
+							<div id="box_main_nei_zs_sub3_sub2">
+								<div id="box_main_nei_zs_sub3_sub2_sub1">
+									<div xmlns="" class="columnSpace" id="elem-FrontNews_list01-1383905946096" name="资讯列表">
+										<script type="text/javascript">
+											// <![CDATA[
+											FrontNews_list01['FrontNews_list01-1383905946096_init'] = function() {
+												var showDegree = 0;
+												var showQuestionTag = 0;
+												var showMessageCount = 0;
+												var otherShowDegree = 0;
+												var otherShowMessageCount = 0;
+												var otherShowQuestionTag = 0;
+												if (showDegree == '1' || showQuestionTag == '1' || showMessageCount == '1') {
+													FrontNews_list01.getAjaxValueByNewsId("19", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_1", "FrontNews_list01-1383905946096_CommentCount_1", "FrontNews_list01-1383905946096_showQuestionTag_1");
+													FrontNews_list01.getAjaxValueByNewsId("18", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_2", "FrontNews_list01-1383905946096_CommentCount_2", "FrontNews_list01-1383905946096_showQuestionTag_2");
+													FrontNews_list01.getAjaxValueByNewsId("17", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_3", "FrontNews_list01-1383905946096_CommentCount_3", "FrontNews_list01-1383905946096_showQuestionTag_3");
+													FrontNews_list01.getAjaxValueByNewsId("16", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_4", "FrontNews_list01-1383905946096_CommentCount_4", "FrontNews_list01-1383905946096_showQuestionTag_4");
+													FrontNews_list01.getAjaxValueByNewsId("15", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_5", "FrontNews_list01-1383905946096_CommentCount_5", "FrontNews_list01-1383905946096_showQuestionTag_5");
+													FrontNews_list01.getAjaxValueByNewsId("14", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_6", "FrontNews_list01-1383905946096_CommentCount_6", "FrontNews_list01-1383905946096_showQuestionTag_6");
+													FrontNews_list01.getAjaxValueByNewsId("13", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_7", "FrontNews_list01-1383905946096_CommentCount_7", "FrontNews_list01-1383905946096_showQuestionTag_7");
+													FrontNews_list01.getAjaxValueByNewsId("12", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_8", "FrontNews_list01-1383905946096_CommentCount_8", "FrontNews_list01-1383905946096_showQuestionTag_8");
+													FrontNews_list01.getAjaxValueByNewsId("11", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_9", "FrontNews_list01-1383905946096_CommentCount_9", "FrontNews_list01-1383905946096_showQuestionTag_9");
+													FrontNews_list01.getAjaxValueByNewsId("10", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_10", "FrontNews_list01-1383905946096_CommentCount_10", "FrontNews_list01-1383905946096_showQuestionTag_10");
+												}
+											}
+											function setVisited(id, linkUrl, detailOpenStyle) {
+												//读取资讯的浏览次数！
+												$.get("/FrontNews.do", "method=getVisitedCountByAjax&newsId=" + id, function(data) {
+													var linkUrl1 = linkUrl;
+													var OpenStyle = detailOpenStyle
+													var url = '/FrontNews.do?method=setVisitedCountByAjax&newsId=' + id + '&times=' + data;
+													//保存资讯的浏览次数！
+													$.post(url, function(data) {
+														window.open(linkUrl1, OpenStyle);
+													});
+												}, 'html');
+											}
+
+											$(FrontNews_list01['FrontNews_list01-1383905946096_init']);
+											// ]]>
+											Date.prototype.Format = function(fmt) {//author: meizz
+												var o = {
+													"M+" : this.getMonth() + 1, //月份
+													"d+" : this.getDate(), //日
+													"h+" : this.getHours(), //小时
+													"m+" : this.getMinutes(), //分
+													"s+" : this.getSeconds(), //秒
+													"q+" : Math.floor((this.getMonth() + 3) / 3), //季度
+													"S" : this.getMilliseconds() //毫秒
+												};
+												if (/(y+)/.test(fmt))
+													fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+												for (var k in o)
+												if (new RegExp("(" + k + ")").test(fmt))
+													fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+												return fmt;
+											}
+											window.onload = function() {
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("19_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("19_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("19_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("18_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("18_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("18_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("17_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("17_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("17_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("16_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("16_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("16_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("15_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("15_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("15_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("14_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("14_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("14_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("13_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("13_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("13_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("12_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("12_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("12_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("11_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("11_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("11_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("10_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("10_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("10_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+											};
+										</script>
+										<div id="FrontNews_list01-1383905946096" class="FrontNews_list01-d1_c1_01">
+											<ul class="comstyle newslist-01">
+
+												<li class="content column-num1">
+													<div class="newstitle">
+														<ul>
+															{dede:arclist row=10 orderby=click}
+															<li class="title">
+																<h3><a href="[field:arcurl/]" title="2[field:title/]" target="_self"> [field:title/]...</a></h3>
+															</li>
+															{/dede:arclist}
+															
+														</ul>
+														
+													</div>
+												</li>
+											</ul>
+											<p>&nbsp;
+													
+
+												</p>
+												<p>&nbsp;
+													
+
+												</p>
+											<p>
+													&nbsp;&nbsp; <img src="{dede:global.cfg_cmsurl/}/images/index_article_files/ewm_11.jpg">
+													<br>
+													<img src="{dede:global.cfg_cmsurl/}/images/index_article_files/12_06.png">
+													<br>
+													<a href="http://www.mujiang.com/messages_list.html#"><img src="{dede:global.cfg_cmsurl/}/images/index_article_files/13_08.png"></a>
+													<br>
+													<img src="{dede:global.cfg_cmsurl/}/images/index_article_files/14_09.png">
+												</p>
+										</div>
+
+									
+									</div>
+								</div>
+						
+							<div id="box_main_nei_zs_sub3_sub2_sub2"></div>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</div>
+							<div id="box_main_index_weib">
+						<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383553412489" name="说明页">
+							<div id="FrontSpecifies_show01-1383553412489" class="FrontSpecifies_show01-d3_c1">
+								<div class="describe htmledit">
+									<p>
+										{dede:include filename="footer.htm"/}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" src="{dede:global.cfg_cmsurl/}/images/list_image_files/visittrack.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var visittrack_siteId = 'ZTS_ZT_ZH_CN_2013101100034';
+			var visittrack_url = 'http://ztouch2.gather.shushang-z.cn/trace.do';
+			VisitTrack.visittrack_log(visittrack_siteId, visittrack_url);
+		</script>
+
+	</body>
+</html>

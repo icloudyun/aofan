@@ -1,0 +1,2 @@
+INSERT INTO `dede_guestbook` VALUES('1','对对对','0','0','0','cloud','157959324@qq.com','','','01','127.0.0.1','1414117183','1','xvxvxcxvxcvxvxvxvxv');
+INSERT INTO `dede_guestbook` VALUES('2','出售出售','0','1','0','&lt;?php echo $g_name; ?&gt;','157959324@qq.com','','15151515','01','127.0.0.1','1414381742','1','下次vvxvxdsff');

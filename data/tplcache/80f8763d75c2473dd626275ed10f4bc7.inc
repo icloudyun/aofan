@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" title="[field:title/]" target="_self"> [field:image/]</a>

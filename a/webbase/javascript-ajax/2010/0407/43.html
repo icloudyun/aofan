@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.mujiang.com/news_detail/newsId=19.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>JavaScript的9个陷阱及评点_奥凡家具</title>
+		<meta name="keywords" content="JavaScript的9个陷阱及评点">
+		<meta name="description" content="来自Nine Javascript Gotchas, 以下是JavaScript容易犯错的九个陷阱。虽然不是什么很高深的技术问题，但注意一下，会使您的编程轻松些，即所谓make life easier. 笔者对某些陷阱会混杂一些评点。">
+		<link href="/images/article_article_files/lib.min.css" rel="stylesheet" type="text/css">
+		<link href="/images/article_article_files/page_news_detail.min.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="/images/article_article_files/jquery.js"></script>
+		<script type="text/javascript" src="/images/article_article_files/lib.min.js"></script>
+		<script src="/images/article_article_files/saved_resource.js"></script>
+		
+
+	</head>	
+<body id="news_detail">
+		<div class="pageWidth" id="box_root">
+			<div id="box_main">
+				<div id="box_main_index">
+					<div id="box_main_index_toubu">
+						<div id="box_main_index_toubu_logo">
+							<div class="clearBoth"></div>
+							<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383536152714" name="说明页">
+								<div id="FrontSpecifies_show01-1383536152714" class="FrontSpecifies_show01-d3_c1">
+									<div class="describe htmledit">
+										<p>
+											<a herf="/index.html"><img src="/images/article_article_files/logo_05.png"></a>&nbsp;<img src="/images/article_article_files/tb_dh_06.png">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="box_main_index_toubu_sub2">
+							<div id="box_main_index_toubu_sub2_sub1">
+								<div xmlns="" class="columnSpace" id="elem-FrontProducts_generalSearch01-1383536690024" name="商品搜索">
+									<div id="FrontProducts_generalSearch01-1383536690024" class="FrontProducts_generalSearch01-d1_c1_01">
+										<form id="FrontProducts_generalSearch01-1383536690024_searchForm" name="FrontProducts_generalSearch01-1383536690024_searchForm" method="post" target="_self" onSubmit="return FrontProducts_generalSearch01.validateForm(&#39;FrontProducts_generalSearch01-1383536690024&#39;,&#39;false&#39;,&#39;请输入名称或编号&#39;);" action="/plus/search.php">
+											<input type="hidden" id="FrontProducts_generalSearch01-1383536690024_searchType" name="searchType" value="1">
+											<input type="hidden" id="FrontProducts_generalSearch01-1383536690024_propertyType" value="2">
+											<input type="hidden" id="FrontProducts_generalSearch01-1383536690024_areaType" value="">
+											<input type="hidden" name="action_page" value="/products_list.html">
+											<span class="keyword"> <span> </span>
+												<input id="FrontProducts_generalSearch01-1383536690024_keyword" name="keyword" class="input input-gray input-keyword" type="text" value="" onFocus="FrontProducts_generalSearch01.keyover(&#39;FrontProducts_generalSearch01-1383536690024&#39;,&#39;请输入名称或编号&#39;)" onBlur="FrontProducts_generalSearch01.keyout(&#39;FrontProducts_generalSearch01-1383536690024&#39;,&#39;请输入名称或编号&#39;)" maxlength="50">
+											</span>
+											<input id="FrontProducts_generalSearch01-1383536690024_propertyId" type="hidden" value="">
+											<span class="search1">
+												<input type="submit" class="btn btn-com-03" value="">
+											</span>
+										</form>
+										<script type="text/javascript">
+											//<![CDATA[
+											FrontProducts_generalSearch01.keyout('FrontProducts_generalSearch01-1383536690024', '请输入名称或编号');
+											//]]>
+										</script>
+									</div>
+								</div>
+							</div>
+							<div id="box_main_index_toubu_daoh">
+								<div xmlns="" class="columnSpace" id="elem-FrontColumns_navigation01-1383536761574" name="栏目导航">
+									<script type="text/javascript">
+										//<![CDATA[
+										/***********************************************
+										 * All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+										 * This notice MUST stay intact for legal use
+										 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+										 ***********************************************/
+										FrontColumns_navigation01['FrontColumns_navigation01-1383536761574_init'] = function() {
+											FrontColumns_navigation01.d2ddlevelsmenu.init("d2menubar_FrontColumns_navigation01-1383536761574", "topbar");
+										}
+										$(FrontColumns_navigation01['FrontColumns_navigation01-1383536761574_init']);
+										// ]]>
+									</script>
+
+
+<div id="FrontColumns_navigation01-1383536761574" class="FrontColumns_navigation01-d2_c1">
+										<div id="d2menubar_FrontColumns_navigation01-1383536761574" class="mattblackmenu">
+											<ul class="nav-first">
+												<li class="first">
+													<a href="http://www.shaofanjiaju.com/" title="首页"> 首页</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=12" rel="summenu_FrontColumns_navigation01-1383536761574_2" title="关于澳凡"> 关于澳凡</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=1" rel="summenu_FrontColumns_navigation01-1383536761574_4" title="新闻中心" class=""> 新闻中心</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=6" rel="summenu_FrontColumns_navigation01-1383536761574_3" title="澳凡产品" class="">澳凡产品</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=21" title="营销网络"> 营销网络</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=22" title="加盟澳凡">加盟澳凡</a>
+												</li>
+												<li>
+													<a href="http://www.shaofanjiaju.com/plus/list.php?tid=23" rel="summenu_FrontColumns_navigation01-1383536761574_7" title="服务中心"> 服务中心</a>
+												</li>
+												<li class="last"></li>
+											</ul>
+										</div>
+										<ul id="summenu_FrontColumns_navigation01-1383536761574_2" class="ddsubmenustyle" style="z-index: 2000; visibility: hidden;">
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=24"> 公司简介</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=25"> 企业文化</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=26"> 资质荣誉</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=27"> 发展历程</a>
+											</li>
+										</ul>
+										<ul id="summenu_FrontColumns_navigation01-1383536761574_4" class="ddsubmenustyle" style="z-index: 2000; visibility: hidden; left: 798px; top: 86px; height: 0px; width: auto; overflow: hidden; opacity: 0;">
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=2"> 公司新闻</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=3"> 行业动态</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=4"> 家居艺术</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=5"> 最新活动</a>
+											</li>
+										</ul>
+										<ul id="summenu_FrontColumns_navigation01-1383536761574_3" class="ddsubmenustyle" style="z-index: 2000; visibility: hidden; left: 894px; top: 86px; height: 0px; width: 0px; overflow: hidden; opacity: 0;">
+											
+										</ul>
+										<ul id="summenu_FrontColumns_navigation01-1383536761574_7" class="ddsubmenustyle" style="z-index: 2000; visibility: hidden;left: 798px; top: 86px; height: 0px; width: auto; overflow: hidden; opacity: 0;">
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=28"> 联系我们</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=29"> 售后服务</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=30"> 家具常识</a>
+											</li>
+											<li>
+												<a href="http://www.shaofanjiaju.com/plus/list.php?tid=31"> 在线留言</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+										<!--
+										
+										-->
+										
+										
+					<div id="box_main_nei_zs">
+						<div id="box_main_nei_zs_sub1">
+							<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1384162233600" name="说明页">
+								<div id="FrontSpecifies_show01-1384162233600" class="FrontSpecifies_show01-d3_c1">
+									<div class="describe htmledit">
+										<img src="/images/article_article_files/banner_about_041.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="box_main_nei_zs_sub2"></div>
+						<div id="box_main_nei_zs_sub3">
+							<div id="box_main_nei_zs_sub3_sub1">
+								<div id="box_main_nei_zs_sub3_sub1_sub1">
+									<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383906152245" name="说明页">
+										<div id="FrontSpecifies_show01-1383906152245" class="FrontSpecifies_show01-d3_c1">
+											<div class="describe htmledit">
+												<p style="border-bottom: #006867 1px dashed; width: 660px;">
+													<span style="line-height: 40px; font-family: 微软雅黑; color: #2a2a2a; font-size: 12pt; margin_bottom: 20px;">MUJIANG&nbsp;.新闻详细</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="box_main_nei_zs_sub3_sub1_sub2">
+									<div xmlns="" class="columnSpace" id="elem-FrontNews_detail01-1383906138941" name="资讯详细信息">
+										<script type="text/javascript">
+											// <![CDATA[
+											FrontNews_detail01['FrontNews_detail01-1383906138941_init'] = function() {
+												//设置附件的下载地址!
+												//读取留言数量
+											}
+											jQuery(FrontNews_detail01['FrontNews_detail01-1383906138941_init']);
+											// ]]>
+											function convert(compId, item) {
+												var detailform = document.getElementById(compId + "_" + "form");
+												var newsKeyword_show = detailform.newsKeyword.value;
+												if (newsKeyword_show != "") {
+													var keyV = document.getElementById(item).innerText;
+													if (!keyV) {
+														keyV = document.getElementById(item).innerHTML;
+													}
+													var after = encodeURIComponent(keyV);
+													detailform.newsKeyword.value = after;
+												}
+												detailform.action = "/FrontNews.do?method=submit";
+												detailform.submit();
+											}
+
+											function convertStr(item) {
+												return item.replace(/\&lt;/g, "<").replace(/\&gt;/g, ">");
+											}
+
+											function gotohtml() {
+												if (window.i18n_FrontNews_detail01_news_page_haveNoRight) {
+													alert(i18n_FrontNews_detail01_news_page_haveNoRight);
+												}
+												var pageNO = history.length;
+												if (document.all) {
+													//IE代码
+													if (pageNO == 0) {
+														window.close();
+													} else {
+														history.go(-1);
+													}
+												} else {
+													//其他
+													if (pageNO == 1) {
+														window.close();
+													} else {
+														history.go(-1);
+													}
+												}
+											}
+										</script>
+										<form id="FrontNews_detail01-1383906138941_form" method="post">
+											<input type="hidden" name="action_page" value="/news_list.html">
+											<input type="hidden" name="newsScope" value="3">
+											<input type="hidden" name="newsSearch" value="newsSearch">
+											<input type="hidden" name="newsKeyword" value="">
+											<div id="FrontNews_detail01-1383906138941" class="FrontNews_detail01-d1_c1">
+												<div id="newsdetailshow" style="">
+													<h2>JavaScript的9个陷阱及评点</h2>
+													<div class="message">
+														<span class="date"><em>日期：</em>2010-04-07 09:36 </span>
+													</div>
+													<div class="summary"></div>
+													<div class="describe htmledit" id="infoContent">
+
+														<p>来自, 以下是JavaScript容易犯错的九个陷阱。虽然不是什么很高深的技术问题，但注意一下，会使您的编程轻松些，即所谓make life easier. 笔者对某些陷阱会混杂一些评点。</p><ol><li><h2>最后一个逗号</h2><p>如这段代码，注意最后一个逗号，按语言学角度来说应该是不错的（python的类似数据类型辞典dictionary就允许如此）。IE会报语法错误，但语焉不详，你只能用人眼从几千行代码中扫描。</p><pre><code><script>
+  var theObj = {
+        city : "Boston",
+        state : "MA",
+  }
+</script> </code></pre></li><li><h2><span><font face="NSimsun">this</font></span>的引用会改变</h2><p>如这段代码：</p><pre><code><input type="button" value="Gotcha!" id="MyButton" >
+<script>
+var MyObject = function () {
+    this.alertMessage = "Javascript rules";
+    this.ClickHandler = function() {
+        <strong style="COLOR: red">alert(this.alertMessage );</strong>
+  }
+}();
+document.getElementById(”theText”).onclick =  MyObject.ClickHandler
+</script></code></pre><p>并不如你所愿，答案并不是”JavaScript rules”。在执行<span><font face="NSimsun">MyObject.ClickHandler</font></span>时，代码中红色这行，<span><font face="NSimsun">this</font></span>的引用实际上指向的是<span><font face="NSimsun">document.getElementById("theText")</font></span>的引用。可以这么解决：</p><pre><code><input type="button" value="Gotcha!" id="theText" >
+<script>
+var MyObject = function () {
+    <strong style="COLOR: red">var self = this;</strong></span />
+    this.alertMessage = “Javascript rules”;
+    this.OnClick = function() {
+        alert(self.value);
+    }
+}();
+document.getElementById(”theText”).onclick =  MyObject.OnClick
+</script></code></pre><p>实质上，这就是。如果你看过，你会发现解决方案不止一种。</p></li><li><h2>标识盗贼</h2><p>在JavaScript中不要使用跟HTML的id一样的变量名。如下代码：</p><pre><code><input type="button" id="TheButton">
+<script>
+    TheButton = get("TheButton");
+</script></code></pre><p>IE会报对象未定义的错误。我只能说：IE sucks.</p></li><li><h2>字符串只替换第一个匹配</h2><p>如下代码：</p><pre><code><script>
+    var fileName = "This is a title".replace(" ","_");
+</script></code></pre><p>而实际上，结果是”<span><font face="NSimsun">This_is a title</font></span>“. 在JavaScript中，<span><font face="NSimsun">String.replace</font></span>的第一个参数应该是正则表达式。所以，正确的做法是这样：</p><pre><code>var fileName = "This is a title".replace(/ /g,"_");</code></pre></li><li><h2>mouseout意味着mousein</h2><p>事实上，这是由于事件冒泡导致的。IE中有<span><font face="NSimsun">mouseenter</font></span>和<span><font face="NSimsun">mouseleave</font></span>，但不是标准的。作者在此建议大家使用库比如YUI来解决问题。</p></li><li><h2><span><font face="NSimsun">parseInt</font></span>是基于进制体系的</h2><p>这个是常识，可是很多人给忽略了<span><font face="NSimsun">parseInt</font></span>还有第二个参数，用以指明进制。比如，<span><font face="NSimsun">parseInt("09")</font></span>，如果你认为答案是9，那就错了。因为，在此，字符串以0开头，<span><font face="NSimsun">parseInt</font></span>以八进制来处理它，在八进制中，<span><font face="NSimsun">09</font></span>是非法，返回<span><font face="NSimsun">false</font></span>，布尔值<span><font face="NSimsun">false</font></span>转化成数值就是0. 因此，正确的做法是<span><font face="NSimsun">parseInt("09", 10)</font></span>. </p></li><li><h2><span><font face="NSimsun">for...in...</font></span>会遍历所有的东西</h2><p>有一段这样的代码：</p><pre><code>var arr = [5,10,15]
+var total = 1;
+for ( var x in arr) {
+    total = total * arr[x];
+}</code></pre><p>运行得好好的，不是吗？但是有一天它不干了，给我返回的值变成了<span><font face="NSimsun">NaN</font></span>, 晕。我只不过引入了一个库而已啊。原来是这个库改写了<span><font face="NSimsun">Array</font></span>的<span><font face="NSimsun">prototype</font></span>，这样，我们的<span><font face="NSimsun">arr</font></span>平白无过多出了一个属性（方法），而<span><font face="NSimsun">for...in...</font></span>会把它给遍历出来。所以这样做才是比较安全的：</p><pre><code>for ( var x = 0; x < arr.length; x++) {
+    total = total * arr[x];
+}</code></pre><p>其实，这也是污染基本类的<span><font face="NSimsun">prototype</font></span>会带来危害的一个例证。</p></li><li><h2>事件处理器的陷阱</h2><p>这其实只会存在使用作为对象属性的事件处理器才会存在的问题。比如<font face="NSimsun"><span>window.onclick = MyOnClickMethod</span><span>这样的代码，这会复写掉之前的</span><span>window.onclick</span></font>事件，还可能导致IE的内容泄露（sucks again）。在IE还没有支持DOM 2的事件注册之前，作者建议使用库来解决问题，比如使用YUI:</p><pre><code>YAHOO.util.Event.addListener(window, "click", MyOnClickMethod);</code></pre><p>这应该也属于常识问题，但新手可能容易犯错。</p></li><li><h2>Focus Pocus</h2><p>新建一个<span><font face="NSimsun">input</font></span>文本元素，然后把焦点挪到它上面，按理说，这样的代码应该很自然：</p><pre><code>var newInput = document.createElement("input");
+document.body.appendChild(newInput);
+newInput.focus();
+newInput.select();</code></pre><p>但是IE会报错（sucks again and again）。理由可能是当你执行<span><font face="NSimsun">fouce()</font></span>的时候，元素尚未可用。因此，我们可以延迟执行：</p><pre><code>var newInput = document.createElement("input");
+newInput.id = "TheNewInput";
+document.body.appendChild(newInput);
+setTimeout(function(){ //这里我使用闭包改写过，若有兴趣可以对比原文
+	document.getElementById('TheNewInput').focus();
+	document.getElementById('TheNewInput').select();}, 10);</code></pre></li></ol><p>在实践中，JavaScript的陷阱还有很多很多，大多是由于解析器的实现不到位而引起。这些东西一般都不会在教科书中出现，只能靠开发者之间的经验分享。谢天谢地，我们生活在网络时代，很多碰到的问题，一般都可以在Google中找到答案。 </p><p>来源:</p>
+            <p align="center"> </p>
+														
+														(责任编辑：admin)
+													</div>
+													<p></p>
+													<div class="operate"></div>
+													<div class="other">
+														<p class="typename">
+															<strong>所属类别：</strong>
+															
+														</p>
+														<p class="keyword">
+															该资讯的关键词为：JavaScript的9个陷阱及评点
+														</p>
+														<ul>
+															<li>
+																上一篇：<a href='/a/webbase/javascript-ajax/2010/0407/42.html'>JavaScript基础知识总结</a> 
+															</li>
+															<li>
+																下一篇：<a href='/a/webbase/javascript-ajax/2010/0407/44.html'>网页中常用的Javascript代码</a> 
+															</li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+
+										</form>
+										<script type="text/javascript">
+											jQuery("#newsdetailshow").show();
+										</script>
+									</div>
+								</div>
+							</div>
+							<div id="box_main_nei_zs_sub3_sub2">
+								<div id="box_main_nei_zs_sub3_sub2_sub1">
+									<div xmlns="" class="columnSpace" id="elem-FrontNews_list01-1383905946096" name="资讯列表">
+										<script type="text/javascript">
+											// <![CDATA[
+											FrontNews_list01['FrontNews_list01-1383905946096_init'] = function() {
+												var showDegree = 0;
+												var showQuestionTag = 0;
+												var showMessageCount = 0;
+												var otherShowDegree = 0;
+												var otherShowMessageCount = 0;
+												var otherShowQuestionTag = 0;
+												if (showDegree == '1' || showQuestionTag == '1' || showMessageCount == '1') {
+													FrontNews_list01.getAjaxValueByNewsId("19", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_1", "FrontNews_list01-1383905946096_CommentCount_1", "FrontNews_list01-1383905946096_showQuestionTag_1");
+													FrontNews_list01.getAjaxValueByNewsId("18", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_2", "FrontNews_list01-1383905946096_CommentCount_2", "FrontNews_list01-1383905946096_showQuestionTag_2");
+													FrontNews_list01.getAjaxValueByNewsId("17", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_3", "FrontNews_list01-1383905946096_CommentCount_3", "FrontNews_list01-1383905946096_showQuestionTag_3");
+													FrontNews_list01.getAjaxValueByNewsId("16", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_4", "FrontNews_list01-1383905946096_CommentCount_4", "FrontNews_list01-1383905946096_showQuestionTag_4");
+													FrontNews_list01.getAjaxValueByNewsId("15", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_5", "FrontNews_list01-1383905946096_CommentCount_5", "FrontNews_list01-1383905946096_showQuestionTag_5");
+													FrontNews_list01.getAjaxValueByNewsId("14", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_6", "FrontNews_list01-1383905946096_CommentCount_6", "FrontNews_list01-1383905946096_showQuestionTag_6");
+													FrontNews_list01.getAjaxValueByNewsId("13", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_7", "FrontNews_list01-1383905946096_CommentCount_7", "FrontNews_list01-1383905946096_showQuestionTag_7");
+													FrontNews_list01.getAjaxValueByNewsId("12", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_8", "FrontNews_list01-1383905946096_CommentCount_8", "FrontNews_list01-1383905946096_showQuestionTag_8");
+													FrontNews_list01.getAjaxValueByNewsId("11", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_9", "FrontNews_list01-1383905946096_CommentCount_9", "FrontNews_list01-1383905946096_showQuestionTag_9");
+													FrontNews_list01.getAjaxValueByNewsId("10", "false", showDegree, showMessageCount, showQuestionTag, "FrontNews_list01-1383905946096_VisitedCount_10", "FrontNews_list01-1383905946096_CommentCount_10", "FrontNews_list01-1383905946096_showQuestionTag_10");
+												}
+											}
+											function setVisited(id, linkUrl, detailOpenStyle) {
+												//读取资讯的浏览次数！
+												$.get("/FrontNews.do", "method=getVisitedCountByAjax&newsId=" + id, function(data) {
+													var linkUrl1 = linkUrl;
+													var OpenStyle = detailOpenStyle
+													var url = '/FrontNews.do?method=setVisitedCountByAjax&newsId=' + id + '&times=' + data;
+													//保存资讯的浏览次数！
+													$.post(url, function(data) {
+														window.open(linkUrl1, OpenStyle);
+													});
+												}, 'html');
+											}
+
+											$(FrontNews_list01['FrontNews_list01-1383905946096_init']);
+											// ]]>
+											Date.prototype.Format = function(fmt) {//author: meizz
+												var o = {
+													"M+" : this.getMonth() + 1, //月份
+													"d+" : this.getDate(), //日
+													"h+" : this.getHours(), //小时
+													"m+" : this.getMinutes(), //分
+													"s+" : this.getSeconds(), //秒
+													"q+" : Math.floor((this.getMonth() + 3) / 3), //季度
+													"S" : this.getMilliseconds() //毫秒
+												};
+												if (/(y+)/.test(fmt))
+													fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+												for (var k in o)
+												if (new RegExp("(" + k + ")").test(fmt))
+													fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+												return fmt;
+											}
+											window.onload = function() {
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("19_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("19_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("19_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("18_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("18_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("18_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("17_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("17_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("17_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("16_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("16_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("16_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("15_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("15_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("15_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("14_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("14_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("14_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("13_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("13_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("13_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("12_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("12_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("12_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("11_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("11_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("11_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+												var startDate = "";
+												var endDate = "";
+												if (startDate != "") {
+													if (endDate != "") {
+														var newDate = new Date().Format("yyyy/MM/dd");
+														var newDateValue = Date.parse(newDate);
+														var endDate1 = endDate.replace(/-/g, "/");
+														var endDateValue = Date.parse(endDate1);
+														if (endDateValue - newDateValue < 0) {
+															var infoMakerValue = document.getElementById("10_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "none";
+															}
+														} else {
+															var infoMakerValue = document.getElementById("10_infoMaker");
+															if (infoMakerValue != null) {
+																infoMakerValue.style.display = "block";
+															}
+														}
+													} else {
+														var infoMakerValue = document.getElementById("10_infoMaker");
+														if (infoMakerValue != null) {
+															infoMakerValue.style.display = "block";
+														}
+													}
+												}
+											};
+										</script>
+										<div id="FrontNews_list01-1383905946096" class="FrontNews_list01-d1_c1_01">
+											<ul class="comstyle newslist-01">
+
+												<li class="content column-num1">
+													<div class="newstitle">
+														<ul>
+															<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/39.html" title="2Web2.0十大Ajax安全漏洞以及" target="_self"> Web2.0十大Ajax安全漏洞以及...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/34.html" title="2JavaScript风格要素" target="_self"> JavaScript风格要素...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/35.html" title="2用JavaScript的日期对象操控" target="_self"> 用JavaScript的日期对象操控...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/36.html" title="2减轻JavaScript测试和调试负" target="_self"> 减轻JavaScript测试和调试负...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/37.html" title="2使用AJAX技术的十大理由" target="_self"> 使用AJAX技术的十大理由...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/38.html" title="2Ajax 技术入门简介" target="_self"> Ajax 技术入门简介...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/40.html" title="2JavaScript开发时的五个小提" target="_self"> JavaScript开发时的五个小提...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/41.html" title="2JavaScript：世界上误解最深" target="_self"> JavaScript：世界上误解最深...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/42.html" title="2JavaScript基础知识总结" target="_self"> JavaScript基础知识总结...</a></h3>
+															</li>
+<li class="title">
+																<h3><a href="/a/webbase/javascript-ajax/2010/0407/43.html" title="2JavaScript的9个陷阱及评点" target="_self"> JavaScript的9个陷阱及评点...</a></h3>
+															</li>
+
+															
+														</ul>
+														
+													</div>
+												</li>
+											</ul>
+											<p>&nbsp;
+													
+
+												</p>
+												<p>&nbsp;
+													
+
+												</p>
+											<p>
+													&nbsp;&nbsp; <img src="/images/index_article_files/ewm_11.jpg">
+													<br>
+													<img src="/images/index_article_files/12_06.png">
+													<br>
+													<a href="http://www.mujiang.com/messages_list.html#"><img src="/images/index_article_files/13_08.png"></a>
+													<br>
+													<img src="/images/index_article_files/14_09.png">
+												</p>
+										</div>
+
+									
+									</div>
+								</div>
+						
+							<div id="box_main_nei_zs_sub3_sub2_sub2"></div>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</div>
+							<div id="box_main_index_weib">
+						<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383553412489" name="说明页">
+							<div id="FrontSpecifies_show01-1383553412489" class="FrontSpecifies_show01-d3_c1">
+								<div class="describe htmledit">
+									<p>
+										<!-- //底部模板 -->
+
+<span style="color: #4d4d4d;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Copyright © shaofanjiu.com All Rights Reserved</span>. 上海市澳凡家具有限公司 <a href="http://www.miibeian.gov.cn/">粤ICP备080253599号</a>&nbsp; 技术支持<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=157959324&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:157959324:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></span></span>
+
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" src="/images/list_image_files/visittrack.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var visittrack_siteId = 'ZTS_ZT_ZH_CN_2013101100034';
+			var visittrack_url = 'http://ztouch2.gather.shushang-z.cn/trace.do';
+			VisitTrack.visittrack_log(visittrack_siteId, visittrack_url);
+		</script>
+
+	</body>
+</html>

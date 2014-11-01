@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)http://www.mujiang.com/messages_list/columnsId=54.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+		<meta name="keywords" content="{dede:field.keywords/}">
+		<meta name="description" content="{dede:field.description function='html2text(@me)'/}">
+		<link href="{dede:global.cfg_cmsurl/}/images/zxly_files/lib.min.css" rel="stylesheet" type="text/css">
+		<link href="{dede:global.cfg_cmsurl/}/images/zxly_files/page_messages_list.min.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="{dede:global.cfg_cmsurl/}/images/zxly_files/jquery.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_cmsurl/}/images/zxly_files/lib.min.js"></script>
+		<script src="{dede:global.cfg_cmsurl/}/images/zxly_files/saved_resource.js"></script>
+
+
+	</head>
+	{dede:include filename="head.htm"/}
+	<div id="box_main_nei_zs">
+		<div id="box_main_nei_zs_sub1">
+			<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1384221697631" name="说明页">
+				<div id="FrontSpecifies_show01-1384221697631" class="FrontSpecifies_show01-d3_c1">
+					<div class="describe htmledit">
+						<img src="{dede:global.cfg_cmsurl/}/images/zxly_files/banner_about_046.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="box_main_nei_zs_sub2"></div>
+		<div id="box_main_nei_zs_sub3">
+			<div id="box_main_nei_zs_sub3_sub1">
+				<div id="box_main_nei_zs_sub3_sub1_sub1">
+					<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383900554286" name="说明页">
+						<div id="FrontSpecifies_show01-1383900554286" class="FrontSpecifies_show01-d3_c1">
+							<div class="describe htmledit">
+								<p style="border-bottom: #006867 1px dashed; width: 720px;">
+									<span style="line-height: 30px; font-family: 微软雅黑; color: #2a2a2a; font-size: 11pt; margin_bottom: 20px;">MUJIANG&nbsp;.留言中心</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="box_main_nei_zs_sub3_sub1_sub2">
+					<div xmlns="" class="columnSpace" id="elem-FrontMessages_emit01-1383900640280" name="发表留言">
+						<div id="FrontMessages_emit01-1383900640280" class="FrontMessages_emit01-d1_c1">
+							<iframe name="myframe" style="display:none" src="{dede:global.cfg_cmsurl/}/images/zxly_files/FrontMessages.htm"></iframe>
+							<a name="messageLink">&nbsp;</a>
+							
+							
+							<form id="FrontMessages_emit01-1383900640280_referForm" action="{dede:global.cfg_cmsurl/}/plus/search.php" method="post" name="form1">
+								<input type="hidden" id="succesUrl" name="succesUrl" value="/messages_list.html">
+								<input type="hidden" id="token" name="token" value="2558aec83c5e4725600b132a073507af">
+								<input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="">
+								<input type="hidden" name="orignal_url" id="FrontMessages_emit01-1383900640280_currentPage" value="">
+								<table border="0" cellspacing="0" cellpadding="0" class="tablestyle">
+									<tbody>
+										<tr class="type">
+										</tr>
+										<tr class="title">
+											<th>标题：</th>
+											<td>
+											<input type="hidden" id="isDisplayMessagesTitle" value="1">
+											<div class="text-oper">
+												<span class="fontnone">&nbsp;</span>
+												<input type="text" maxlength="50" name="title" size="30" class="ipt-txt"/>
+											</div>
+											<div class="text-tip">
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_nomessagesTitle"> 留言标题为必填项，请填写</span>
+											</div></td>
+										</tr>
+										<tr class="info">
+											<th valign="top">留言内容：</th>
+											<td>
+											<input type="hidden" name="maxContent" id="maxContent" value="500">
+											<div class="text-oper">
+												<span class="fontred">*</span>
+												<textarea name="msg" cols="38" rows="5" class="textarea ipt-txt"></textarea>
+											
+												<span class="tips"> 已输入字符：<span id="dynamicNum">0</span> 字<span class="tips"> </span> </span>
+											</div>
+											<div class="text-tip">
+												<span class="tip-default" id="FrontMessages_emit01-1383900640280_infocontent"> 小于等于500字符</span>
+												<span class="tip-remind" style="display:none;" id="FrontMessages_emit01-1383900640280_infocontent_black"> 小于等于500字符</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_nocontent"> 留言内容为必填项，请填写</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_errcontent"> 留言内容应小于等于500字符，请重新填写</span>
+											</div></td>
+										</tr>
+										<tr class="mail">
+											<th>您的邮箱：</th>
+											<td>
+											<input type="hidden" id="isDisplayMail" value="1">
+											<div class="text-oper">
+												<span class="fontnone">&nbsp;</span>
+												<input maxlength="80" type="text" name="email" size="30" class="ipt-txt"/>
+											</div>
+											<div class="text-tip">
+												<span class="tip-default" id="FrontMessages_emit01-1383900640280_infomail"> 示例：example@mail.com</span>
+												<span class="tip-remind" style="display:none;" id="FrontMessages_emit01-1383900640280_infomail_black"> 示例：example@mail.com</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_errmail"> 留言人邮箱应含有@和.字符、请重新填写</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_nomail"> 留言人邮箱为必填项，请填写</span>
+											</div></td>
+										</tr>
+										<tr class="phone">
+											<th> 手机号码：</th>
+											<td>
+											<input type="hidden" id="isDisplayMobile" value="1">
+											<div class="text-oper">
+												<span class="fontnone">&nbsp;</span>
+												<input maxlength="20" type="text" name="qq" size="20" class="ipt-txt" />
+											</div>
+											<div class="text-tip">
+												<span class="tip-default" id="FrontMessages_emit01-1383900640280_infomobile"> 由数字、“+”、中横杠“-”组成，最大允许20个字符</span>
+												<span class="tip-remind" style="display:none;" id="FrontMessages_emit01-1383900640280_infomobile_black"> 由数字、“+”、中横杠“-”组成，最大允许20个字符</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_errmobile"> 手机号码应由数字、“+”、中横杠“-”组成，请重新填写</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_nomobile"> 手机号码为必填项，请填写</span>
+											</div></td>
+										</tr>
+										
+										<tr class="verify">
+											<th>验证码：</th>
+											<td>
+											<div class="text-oper">
+												<span class="fontred">*</span>
+												<input name="validate" type="text" id="vdcode2" class="ipt-txt" style="width:60px;text-transform: uppercase;" />
+												<img src="{dede:global.cfg_cmsurl/}/include/vdimgck.php" id="FrontMessages_emit01-1383900640280_vcode" alt="" class="verify-pic" onclick="this.src=this.src + &#39;?1&#39;;" onerror="this.src=&#39;/verifyCode&#39;">
+												<input type="hidden" id="ajaxverifyCode" name="ajaxverifyCode" value="">
+												<input type="hidden" id="FrontMessages_emit01-1383900640280_chkcode" name="FrontMessages_emit01-1383900640280_chkcode" value="">
+												<span onclick="document.getElementById(&#39;FrontMessages_emit01-1383900640280_vcode&#39;).src+=1;"><a href="javaScript:void(0);"> 看不清楚？换张图片</a> </span>
+											</div>
+											<div class="text-tip">
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_noverifyCode"> 验证码为必填项，请填写</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_pastverifyCode"> 验证码已过期，请重新输入</span>
+												<span class="tip-error" style="display:none;" id="FrontMessages_emit01-1383900640280_errverifyCode"> 验证码输入错误，请重新输入</span>
+											</div></td>
+										</tr>
+										<tr class="button-position">
+											<th>&nbsp;</th>
+											<td><span class="fontnone">&nbsp;</span>
+										
+											<input maxlength="1000" type="submit" name="Submit" value="发表留言" title="发表留言" class="btn btn-com-01" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<input type="hidden" name="categoryType" value="">
+								<input type="hidden" name="CompAction" value="SubmitMessage">
+								<input type="hidden" name="newsId" value="">
+								<input type="hidden" name="productId" value="">
+								<input type="hidden" name="downloadsId" value="">
+								<input type="hidden" name="onlineId" value="">
+								<input type="hidden" name="membersarticleId" value="">
+
+							</form>
+						</div>
+						<script type="text/javascript">
+							//<![CDATA[
+							$.get("/FrontMessages.do?method=GetInputData", function(data) {
+								if (data != "") {
+									FrontMessages_emit01.callback(data);
+								}
+							});
+							FrontMessages_emit01.chkverifyCode('', 'FrontMessages_emit01-1383900640280');
+							//]]>
+						</script>
+					</div>
+				</div>
+			</div>
+			<div id="box_main_nei_zs_sub3_sub2">
+				<div id="box_main_nei_zs_sub3_sub2_sub1">
+					<div xmlns="" class="columnSpace" id="elem-FrontComContent_list01-1383898952367" name="通用内容列表">
+						<div id="FrontComContent_list01-1383898952367" class="FrontComContent_list01-d1_c1">
+							<div class="menu-first">
+								<script type="text/javascript">
+									//<![CDATA[
+									FrontComContent_list01['FrontComContent_list01-1383898952367_init'] = function() {
+										FrontComContent_list01.d1extNoContainCategoryAlternate('FrontComContent_list01-1383898952367');
+									};
+									$(FrontComContent_list01['FrontComContent_list01-1383898952367_init']);
+									// ]]>
+								</script>
+								<ul class="list2">
+									{dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+      "}
+													<li class="menu-none">
+														<a href="[field:typelink/]" target="_self" class="menu-text1"> [field:typename/]</a>
+						
+													</li>{/dede:channel}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="box_main_nei_zs_sub3_sub2_sub2">
+					<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383898984532" name="说明页">
+						<div id="FrontSpecifies_show01-1383898984532" class="FrontSpecifies_show01-d3_c1">
+							<div class="describe htmledit">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="box_main_nei_zs_sub3_sub2_sub3" class="">
+					<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1384234756191" name="说明页">
+						<div id="FrontSpecifies_show01-1384234756191" class="FrontSpecifies_show01-d3_c1">
+							<div class="describe htmledit">
+								<p>&nbsp;
+									
+								</p>
+								<p>&nbsp;
+									
+								</p>
+								<p>
+									&nbsp;&nbsp; <img src="{dede:global.cfg_cmsurl/}/images/zxly_files/ewm_11.jpg">
+									<br>
+									<img src="{dede:global.cfg_cmsurl/}/images/zxly_files/12_06.png">
+									<br>
+									<a href="{dede:global.cfg_cmsurl/}/plus/list.php?tid=31"><img src="{dede:global.cfg_cmsurl/}/images/zxly_files/13_08.png"></a>
+									<br>
+									<img src="{dede:global.cfg_cmsurl/}/images/zxly_files/14_09.png">
+								</p>
+								<p>&nbsp;
+									
+								</p>
+								<p>&nbsp;
+									
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	<div id="box_main_index_weib">
+		<div xmlns="" class="columnSpace" id="elem-FrontSpecifies_show01-1383553412489" name="说明页">
+			<div id="FrontSpecifies_show01-1383553412489" class="FrontSpecifies_show01-d3_c1">
+				<div class="describe htmledit">
+					<p>
+						{dede:include filename="footer.htm"/}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<script language="javascript" src="{dede:global.cfg_cmsurl/}/images/zxly_files/visittrack.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var visittrack_siteId = 'ZTS_ZT_ZH_CN_2013101100034';
+		var visittrack_url = 'http://ztouch2.gather.shushang-z.cn/trace.do';
+		VisitTrack.visittrack_log(visittrack_siteId, visittrack_url);
+	</script>
+
+	</body>
+</html>
