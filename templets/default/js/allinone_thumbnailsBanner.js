@@ -484,7 +484,7 @@
 			}) : 8 == h && g.css({
 				filter : "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + c.current_imgInside.attr("src") + "',sizingMethod='scale')"
 			})));
-			a.enableTouchScreen && ( h = Math.floor(1E5 * Math.random()), g.wrap('<div id="bannerWithThumbnailsParent_' + h + '" style="position:relative;" />'), e("#bannerWithThumbnailsParent_" + h).width(a.width + 1), e("#bannerWithThumbnailsParent_" + h).height(a.height), g.css({
+			a.enableTouchScreen && ( h = Math.floor(1E5 * Math.random()), g.wrap('<div id="bannerWithThumbnailsParent_' + h + '" style="" />'), e("#bannerWithThumbnailsParent_" + h).width(a.width + 1), e("#bannerWithThumbnailsParent_" + h).height(a.height), g.css({
 				cursor : "url(" + a.absUrl + "skins/hand.cur),url(" + a.absUrl + "skins/hand.cur),move",
 				left : "0px",
 				position : "absolute"

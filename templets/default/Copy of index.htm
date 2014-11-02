@@ -25,7 +25,7 @@
 				$('#allinone_thumbnailsBanner').allinone_thumbnailsBanner({
 					skin : 'simple',
 					numberOfThumbsPerScreen : 4,
-					width : 1920,
+					width : 1252,
 					height : 484,
 					thumbsReflection : 0,
 					defaultEffect : 'random'
@@ -34,6 +34,36 @@
 			});
 		</script>
 
+		<style>
+			#zzz {
+				position: relative;
+			}
+			.outImg {
+				position: absolute;
+				z-index: 100;
+				left: 100px;
+			}
+			.outImg a {
+				display: block;
+				margin-top: 20px;
+				position: relative;
+				overflow: hidden;
+			}
+			.outImg a img {
+				display: block;
+				width: 250px;
+				height: 160px;
+				/*background-color: red;*/
+			}
+			.outImg a img.dataImg {
+				/*background-color: #808080;*/
+				position: absolute;
+				top: 0;
+				left: -400px;
+				width: 400px;
+			}
+
+		</style>
 
 	</head>
 	<body class="index">
@@ -46,6 +76,11 @@
 					<div id="zzz" style="width:960px;margin: 0 auto; padding:10px 0 0 0;">
 						<!------------------------------------------------------------------------------------>
 						<div style="width:960px; height:400px; margin:50px auto 0 auto;">
+
+							<div class="outImg">
+								<a href="http://www.shaofanjiaju.com/plus/list.php?tid=24"> <img src="{dede:global.cfg_templets_skin/}/img/666.png" alt="" class="dataImg"/> <img src="{dede:global.cfg_templets_skin/}/img/1.jpg" alt="" class="Img"/> </a>
+								<a href="http://www.shaofanjiaju.com/plus/list.php?tid=28"> <img src="{dede:global.cfg_templets_skin/}/img/666.png" alt="" class="dataImg"/> <img src="{dede:global.cfg_templets_skin/}/img/2.jpg" alt="" class="Img"/> </a>
+							</div>
 
 							<div id="allinone_thumbnailsBanner" style="display:none;">
 								<ul class="allinone_thumbnailsBanner_list">
@@ -72,9 +107,7 @@
 				<script src="{dede:global.cfg_templets_skin/}/js/custom.js"></script> 
 			</div>
 		</div>
-		<div style="margin-top: 100px;">
-			
-		</div>
+
 		<div id="box_main_index_neir">
 			<div id="box_main_index_neir_sub1">
 				<div id="box_main_index_neir_sub1_sub1">
