@@ -11,6 +11,7 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
+	background-image: url(../../../images/tyimg/bj_01.jpg);
 }
 article, aside, figure, footer, header, nav, section {
 	display: block;

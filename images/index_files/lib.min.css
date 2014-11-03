@@ -12,10 +12,11 @@ BODY {
 	padding-left: 0;
 	padding-right: 0;
 	font-family: "宋体", Arial;
-	background: #fff fixed no-repeat center center;
+	/*background: #fff fixed no-repeat center center;*/
 	color: #000;
 	font-size: 12px;
 	padding-top: 0
+	background-image: url(../../images/tyimg/bj_01.jpg);
 }
 DIV {
 	padding-bottom: 0;
